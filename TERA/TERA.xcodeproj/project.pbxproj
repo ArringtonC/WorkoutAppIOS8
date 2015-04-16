@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C54D50641ADB6A3E0001D908 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54D50631ADB6A3E0001D908 /* AppDelegate.swift */; };
+		C54D50661ADB6A3E0001D908 /* MasterPlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54D50651ADB6A3E0001D908 /* MasterPlaylistViewController.swift */; };
+		C54D50691ADB6A3E0001D908 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54D50671ADB6A3E0001D908 /* Main.storyboard */; };
+		C54D506B1ADB6A3E0001D908 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C54D506A1ADB6A3E0001D908 /* Images.xcassets */; };
+		C54D506E1ADB6A3E0001D908 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C54D506C1ADB6A3E0001D908 /* LaunchScreen.xib */; };
+		C54D507A1ADB6A3E0001D908 /* TERATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54D50791ADB6A3E0001D908 /* TERATests.swift */; };
+		C54D50841ADB78C10001D908 /* RoutineDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54D50831ADB78C10001D908 /* RoutineDetailViewController.swift */; };
+		C56959741ADC99F000391F4A /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56959731ADC99F000391F4A /* Workout.swift */; };
+		C58A7A261ADEDB7900ED9C9F /* WorkOutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58A7A251ADEDB7900ED9C9F /* WorkOutDetailViewController.swift */; };
+		C58A7A281ADEE13600ED9C9F /* MyCustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58A7A271ADEE13600ED9C9F /* MyCustomLabel.swift */; };
+		C5D0B2541ADF275900E963C3 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D0B2531ADF275900E963C3 /* WorkoutView.swift */; };
+		C5D0B2561ADF278400E963C3 /* RoutineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5D0B2551ADF278400E963C3 /* RoutineView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C54D50741ADB6A3E0001D908 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C54D50561ADB6A3E0001D908 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C54D505D1ADB6A3E0001D908;
+			remoteInfo = TERA;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C54D505E1ADB6A3E0001D908 /* TERA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TERA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54D50621ADB6A3E0001D908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C54D50631ADB6A3E0001D908 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C54D50651ADB6A3E0001D908 /* MasterPlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterPlaylistViewController.swift; sourceTree = "<group>"; };
+		C54D50681ADB6A3E0001D908 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C54D506A1ADB6A3E0001D908 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C54D506D1ADB6A3E0001D908 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C54D50731ADB6A3E0001D908 /* TERATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TERATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54D50781ADB6A3E0001D908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C54D50791ADB6A3E0001D908 /* TERATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TERATests.swift; sourceTree = "<group>"; };
+		C54D50831ADB78C10001D908 /* RoutineDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineDetailViewController.swift; sourceTree = "<group>"; };
+		C56959731ADC99F000391F4A /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		C58A7A251ADEDB7900ED9C9F /* WorkOutDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkOutDetailViewController.swift; sourceTree = "<group>"; };
+		C58A7A271ADEE13600ED9C9F /* MyCustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomLabel.swift; sourceTree = "<group>"; };
+		C5D0B2531ADF275900E963C3 /* WorkoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		C5D0B2551ADF278400E963C3 /* RoutineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoutineView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C54D505B1ADB6A3E0001D908 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54D50701ADB6A3E0001D908 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C54D50551ADB6A3E0001D908 = {
+			isa = PBXGroup;
+			children = (
+				C54D50601ADB6A3E0001D908 /* TERA */,
+				C54D50761ADB6A3E0001D908 /* TERATests */,
+				C54D505F1ADB6A3E0001D908 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C54D505F1ADB6A3E0001D908 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C54D505E1ADB6A3E0001D908 /* TERA.app */,
+				C54D50731ADB6A3E0001D908 /* TERATests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C54D50601ADB6A3E0001D908 /* TERA */ = {
+			isa = PBXGroup;
+			children = (
+				C5D0B2521ADF272D00E963C3 /* WorkoutSheet */,
+				C54D50631ADB6A3E0001D908 /* AppDelegate.swift */,
+				C54D50651ADB6A3E0001D908 /* MasterPlaylistViewController.swift */,
+				C54D50671ADB6A3E0001D908 /* Main.storyboard */,
+				C58A7A271ADEE13600ED9C9F /* MyCustomLabel.swift */,
+				C54D50831ADB78C10001D908 /* RoutineDetailViewController.swift */,
+				C58A7A251ADEDB7900ED9C9F /* WorkOutDetailViewController.swift */,
+				C54D506A1ADB6A3E0001D908 /* Images.xcassets */,
+				C54D506C1ADB6A3E0001D908 /* LaunchScreen.xib */,
+				C54D50611ADB6A3E0001D908 /* Supporting Files */,
+				C56959731ADC99F000391F4A /* Workout.swift */,
+			);
+			path = TERA;
+			sourceTree = "<group>";
+		};
+		C54D50611ADB6A3E0001D908 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C54D50621ADB6A3E0001D908 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C54D50761ADB6A3E0001D908 /* TERATests */ = {
+			isa = PBXGroup;
+			children = (
+				C54D50791ADB6A3E0001D908 /* TERATests.swift */,
+				C54D50771ADB6A3E0001D908 /* Supporting Files */,
+			);
+			path = TERATests;
+			sourceTree = "<group>";
+		};
+		C54D50771ADB6A3E0001D908 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C54D50781ADB6A3E0001D908 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C5D0B2521ADF272D00E963C3 /* WorkoutSheet */ = {
+			isa = PBXGroup;
+			children = (
+				C5D0B2531ADF275900E963C3 /* WorkoutView.swift */,
+				C5D0B2551ADF278400E963C3 /* RoutineView.xib */,
+			);
+			name = WorkoutSheet;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C54D505D1ADB6A3E0001D908 /* TERA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C54D507D1ADB6A3E0001D908 /* Build configuration list for PBXNativeTarget "TERA" */;
+			buildPhases = (
+				C54D505A1ADB6A3E0001D908 /* Sources */,
+				C54D505B1ADB6A3E0001D908 /* Frameworks */,
+				C54D505C1ADB6A3E0001D908 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TERA;
+			productName = TERA;
+			productReference = C54D505E1ADB6A3E0001D908 /* TERA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C54D50721ADB6A3E0001D908 /* TERATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C54D50801ADB6A3E0001D908 /* Build configuration list for PBXNativeTarget "TERATests" */;
+			buildPhases = (
+				C54D506F1ADB6A3E0001D908 /* Sources */,
+				C54D50701ADB6A3E0001D908 /* Frameworks */,
+				C54D50711ADB6A3E0001D908 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C54D50751ADB6A3E0001D908 /* PBXTargetDependency */,
+			);
+			name = TERATests;
+			productName = TERATests;
+			productReference = C54D50731ADB6A3E0001D908 /* TERATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C54D50561ADB6A3E0001D908 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = PaulEdwards;
+				TargetAttributes = {
+					C54D505D1ADB6A3E0001D908 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					C54D50721ADB6A3E0001D908 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = C54D505D1ADB6A3E0001D908;
+					};
+				};
+			};
+			buildConfigurationList = C54D50591ADB6A3E0001D908 /* Build configuration list for PBXProject "TERA" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C54D50551ADB6A3E0001D908;
+			productRefGroup = C54D505F1ADB6A3E0001D908 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C54D505D1ADB6A3E0001D908 /* TERA */,
+				C54D50721ADB6A3E0001D908 /* TERATests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C54D505C1ADB6A3E0001D908 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54D50691ADB6A3E0001D908 /* Main.storyboard in Resources */,
+				C5D0B2561ADF278400E963C3 /* RoutineView.xib in Resources */,
+				C54D506E1ADB6A3E0001D908 /* LaunchScreen.xib in Resources */,
+				C54D506B1ADB6A3E0001D908 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54D50711ADB6A3E0001D908 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C54D505A1ADB6A3E0001D908 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D0B2541ADF275900E963C3 /* WorkoutView.swift in Sources */,
+				C54D50661ADB6A3E0001D908 /* MasterPlaylistViewController.swift in Sources */,
+				C58A7A281ADEE13600ED9C9F /* MyCustomLabel.swift in Sources */,
+				C54D50641ADB6A3E0001D908 /* AppDelegate.swift in Sources */,
+				C54D50841ADB78C10001D908 /* RoutineDetailViewController.swift in Sources */,
+				C58A7A261ADEDB7900ED9C9F /* WorkOutDetailViewController.swift in Sources */,
+				C56959741ADC99F000391F4A /* Workout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54D506F1ADB6A3E0001D908 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54D507A1ADB6A3E0001D908 /* TERATests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C54D50751ADB6A3E0001D908 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C54D505D1ADB6A3E0001D908 /* TERA */;
+			targetProxy = C54D50741ADB6A3E0001D908 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C54D50671ADB6A3E0001D908 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C54D50681ADB6A3E0001D908 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C54D506C1ADB6A3E0001D908 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C54D506D1ADB6A3E0001D908 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C54D507B1ADB6A3E0001D908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C54D507C1ADB6A3E0001D908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C54D507E1ADB6A3E0001D908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TERA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C54D507F1ADB6A3E0001D908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TERA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		C54D50811ADB6A3E0001D908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TERATests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TERA.app/TERA";
+			};
+			name = Debug;
+		};
+		C54D50821ADB6A3E0001D908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TERATests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TERA.app/TERA";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C54D50591ADB6A3E0001D908 /* Build configuration list for PBXProject "TERA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54D507B1ADB6A3E0001D908 /* Debug */,
+				C54D507C1ADB6A3E0001D908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C54D507D1ADB6A3E0001D908 /* Build configuration list for PBXNativeTarget "TERA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54D507E1ADB6A3E0001D908 /* Debug */,
+				C54D507F1ADB6A3E0001D908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C54D50801ADB6A3E0001D908 /* Build configuration list for PBXNativeTarget "TERATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54D50811ADB6A3E0001D908 /* Debug */,
+				C54D50821ADB6A3E0001D908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C54D50561ADB6A3E0001D908 /* Project object */;
+}

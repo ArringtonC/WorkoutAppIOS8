@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="RZp-QA-ujS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Routine List-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="MasterPlaylistViewController" customModule="TERA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="today" translatesAutoresizingMaskIntoConstraints="NO" id="j3B-SW-eaa">
+                                <rect key="frame" x="16" y="72" width="124" height="130"/>
+                                <color key="backgroundColor" red="0.19528624999999999" green="0.3820804371" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="uoy-hD-yH8" appends="YES" id="4BM-WV-vCf"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Routine List" id="DuE-NG-kpA"/>
+                    <connections>
+                        <segue destination="EPg-Uu-grd" kind="push" identifier="showTodayDetailSegue" id="axI-B4-TnY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="uoy-hD-yH8">
+                    <connections>
+                        <action selector="showTodayDetail:" destination="vXZ-lx-hvc" id="FH6-eC-a9k"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="694" y="344"/>
+        </scene>
+        <!--Routines-->
+        <scene sceneID="xih-a2-r92">
+            <objects>
+                <viewController id="EPg-Uu-grd" customClass="RoutineDetailViewController" customModule="TERA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HLv-Cf-8I0"/>
+                        <viewControllerLayoutGuide type="bottom" id="2QN-KU-MrS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nG0-3F-0oe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="April 13, 2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCW-zN-eLP">
+                                <rect key="frame" x="87" y="117" width="153" height="34"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ls6-vp-WsM">
+                                <rect key="frame" x="187" y="175" width="65" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time Start" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYu-GW-d5P">
+                                <rect key="frame" x="87" y="179" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time End" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOt-Ds-Iuu">
+                                <rect key="frame" x="87" y="226" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UQt-op-za1">
+                                <rect key="frame" x="187" y="222" width="65" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DiQ-BX-TiN">
+                                <rect key="frame" x="122" y="327" width="83" height="30"/>
+                                <state key="normal" title="Lower Body">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxy-3g-yPy">
+                                <rect key="frame" x="145" y="403" width="36" height="30"/>
+                                <state key="normal" title="Arms">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyY-40-3tb">
+                                <rect key="frame" x="140" y="365" width="46" height="30"/>
+                                <state key="normal" title="Cardio">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDM-90-eXM">
+                                <rect key="frame" x="122" y="289" width="83" height="30"/>
+                                <state key="normal" title="Upper Body">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UEx-gh-vCr" kind="push" identifier="showWorkoutDetail" id="1Eo-p4-5yg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPy-uk-zQh">
+                                <rect key="frame" x="139" y="441" width="49" height="30"/>
+                                <state key="normal" title="Playlist">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LOt-Ds-Iuu" firstAttribute="top" secondItem="HYu-GW-d5P" secondAttribute="bottom" constant="26" id="3Rl-kP-09U"/>
+                            <constraint firstItem="eCW-zN-eLP" firstAttribute="top" secondItem="HLv-Cf-8I0" secondAttribute="bottom" constant="53" id="3mo-ac-6iQ"/>
+                            <constraint firstItem="HYu-GW-d5P" firstAttribute="leading" secondItem="nG0-3F-0oe" secondAttribute="leadingMargin" constant="71" id="5UO-Oh-nAQ"/>
+                            <constraint firstItem="UQt-op-za1" firstAttribute="top" secondItem="Ls6-vp-WsM" secondAttribute="bottom" constant="17" id="8QP-3k-MeF"/>
+                            <constraint firstItem="Ls6-vp-WsM" firstAttribute="top" secondItem="eCW-zN-eLP" secondAttribute="bottom" constant="24" id="JIs-7c-18V"/>
+                            <constraint firstItem="Ls6-vp-WsM" firstAttribute="leading" secondItem="HYu-GW-d5P" secondAttribute="trailing" constant="20" id="Jav-zk-9Gh"/>
+                            <constraint firstItem="eCW-zN-eLP" firstAttribute="leading" secondItem="nG0-3F-0oe" secondAttribute="leadingMargin" constant="71" id="LNF-gK-5rf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eCW-zN-eLP" secondAttribute="trailing" constant="64" id="Sfl-oH-0u0"/>
+                            <constraint firstItem="HYu-GW-d5P" firstAttribute="top" secondItem="eCW-zN-eLP" secondAttribute="bottom" constant="28" id="TSg-lk-8GV"/>
+                            <constraint firstItem="LOt-Ds-Iuu" firstAttribute="leading" secondItem="nG0-3F-0oe" secondAttribute="leadingMargin" constant="71" id="Vcd-Qa-smL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ls6-vp-WsM" secondAttribute="trailing" constant="52" id="dEg-pR-ZOZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UQt-op-za1" secondAttribute="trailing" constant="52" id="dOt-xh-miW"/>
+                            <constraint firstItem="UQt-op-za1" firstAttribute="top" secondItem="nG0-3F-0oe" secondAttribute="top" constant="222" id="keh-fa-k4K"/>
+                            <constraint firstItem="UQt-op-za1" firstAttribute="leading" secondItem="LOt-Ds-Iuu" secondAttribute="trailing" constant="27" id="xwO-XU-C71"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Routines" id="ufh-oD-oxc"/>
+                    <connections>
+                        <outlet property="buttonPressLabel" destination="eCW-zN-eLP" id="KaA-li-aZV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KGi-Yf-1mO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1150" y="344"/>
+        </scene>
+        <!--Workouts-->
+        <scene sceneID="sBw-nx-9fd">
+            <objects>
+                <viewController id="UEx-gh-vCr" customClass="WorkOutDetailViewController" customModule="TERA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EoR-Js-gh1"/>
+                        <viewControllerLayoutGuide type="bottom" id="PW2-YI-FKV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IBj-0N-aw7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fKd-jG-NZh" customClass="WorkoutView" customModule="TERA" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="167" width="320" height="352"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upper Body Workout" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmX-07-iTB">
+                                <rect key="frame" x="79" y="104" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Workouts" id="LA7-dl-TKu"/>
+                    <connections>
+                        <outlet property="routineView" destination="fKd-jG-NZh" id="ZcJ-MK-YPO"/>
+                        <outlet property="workoutLabel" destination="HmX-07-iTB" id="VWG-OE-KxQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1mp-cJ-chU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1542" y="344"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="r3q-hc-iKG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RZp-QA-ujS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YlL-nq-B7f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="5cL-ny-o2M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lDj-lF-rQN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="344"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="today" width="53" height="107"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
